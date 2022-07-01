@@ -1,0 +1,635 @@
+<html>
+<body>
+<div class="center-block">
+            <div class="btn-group dropdown" uib-dropdown="" style="">
+              <button id="select-protocol" type="button" class="btn btn-default ng-binding dropdown-toggle" uib-dropdown-toggle="" aria-haspopup="true" aria-expanded="false">
+                ble <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" uib-dropdown-menu="" role="menu" aria-labelledby="select-protocol">
+                <!-- ngRepeat: (key, value) in index --><li role="menuitem" ng-repeat="(key, value) in index" class="ng-scope">
+                  <a ng-click="$parent.protocol = key" class="ng-binding"> ble </a>
+                </li><!-- end ngRepeat: (key, value) in index -->
+              </ul>
+            </div>
+            <div class="btn-group dropdown" uib-dropdown="" style="">
+              <button id="select-identifier" type="button" class="btn btn-default ng-binding dropdown-toggle" uib-dropdown-toggle="" aria-haspopup="true" aria-expanded="false">
+                uuid16 <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" uib-dropdown-menu="" role="menu" aria-labelledby="select-identifier">
+                <!-- ngRepeat: (key, value) in index[protocol] --><li role="menuitem" ng-repeat="(key, value) in index[protocol]" class="ng-scope" style="">
+                  <a ng-click="$parent.identifier = key" class="ng-binding"> uuid16 </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol] --><li role="menuitem" ng-repeat="(key, value) in index[protocol]" class="ng-scope">
+                  <a ng-click="$parent.identifier = key" class="ng-binding"> uuid128 </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol] --><li role="menuitem" ng-repeat="(key, value) in index[protocol]" class="ng-scope">
+                  <a ng-click="$parent.identifier = key" class="ng-binding"> companyIdentifiers </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol] --><li role="menuitem" ng-repeat="(key, value) in index[protocol]" class="ng-scope">
+                  <a ng-click="$parent.identifier = key" class="ng-binding"> iBeacons </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol] -->
+              </ul>
+            </div>
+            <div class="btn-group dropdown" uib-dropdown="" style="">
+              <button id="select-value" type="button" class="btn btn-default ng-binding dropdown-toggle" uib-dropdown-toggle="" aria-haspopup="true" aria-expanded="false">
+                fefd <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" uib-dropdown-menu="" role="menu" aria-labelledby="select-value">
+                <!-- ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope" style="">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fefd
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fefc
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fefa
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fef9
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fef8
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fef7
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fef6
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fef5
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fef4
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fef3
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fef2
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fef1
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    feef
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    feee
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    feed
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    feec
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    feeb
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    feea
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fee7
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fee6
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fee5
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fee4
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fedd
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fedc
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fed9
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fed4
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fed3
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fed2
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fed1
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fed0
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fecf
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fece
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fecd
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fecc
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fecb
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    feca
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fec9
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fec8
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fec7
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fec4
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    febe
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    feba
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    feb9
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    feb8
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    feb7
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    feb2
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    feb0
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    feaf
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    feaa
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fea6
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fea5
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fea0
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fe9f
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fe9e
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fe9a
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fe95
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fe8f
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fe8b
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fe8a
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fe86
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fe78
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fe77
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fe65
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fe61
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fe59
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fe58
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fe56
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fe55
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fe50
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fe4b
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fe3b
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fe36
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fe35
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fe33
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fe2c
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fe27
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fe26
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fe25
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fe24
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fe21
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fe1f
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fe19
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fe13
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fe0f
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fe08
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fe07
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fdf7
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fdf0
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fdee
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fde2
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fddb
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fdd2
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fdd1
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fdd0
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fdb4
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fdab
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fdaa
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fd9c
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fd9b
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fd9a
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fd96
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fd8c
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fd8a
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fd87
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fd84
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fd82
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fd7e
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fd7c
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fd72
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fd6f
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fd6c
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fd69
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fd63
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fd62
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fd5a
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fd59
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fd4b
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fd44
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] --><li role="menuitem" ng-repeat="(key, value) in index[protocol][identifier]" class="ng-scope">
+                  <a ng-click="$parent.value = key;
+                               updateStory(index[protocol][identifier][key])" class="ng-binding">
+                    fd43
+                  </a>
+                </li><!-- end ngRepeat: (key, value) in index[protocol][identifier] -->
+              </ul>
+            </div>
+          </div>
+<\body>
+<\html>
