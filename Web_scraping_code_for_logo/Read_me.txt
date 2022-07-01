@@ -1,0 +1,1 @@
+This folder contains python code with multicore running capability. Also, one master file which runs all python code and store output in appropriate folder. Kinldy observe the code to create an appropriate folder.
