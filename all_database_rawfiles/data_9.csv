@@ -1,0 +1,4 @@
+,0,1,2,3,4
+0,CoD Hex,CoD Binary,CoD Bits,Bluetooth Device Example,Confirmed
+1,0x000704,000000000000011100000100,"none | 10,9,8 | 2Major Service Class none Major Device Class CoD Bits 8,9,10: Wearable Minor Device Class CoD Bits 2: Wrist Watch",Wrist WatchUnknown,Yes00:06:66 – Roving Networks
+2,0x240704,001001000000011100000100,"21,18 | 10,9,8 | 2Major Service Class CoD Bit 21: Audio (Speaker, Microphone, Headset service, …) CoD Bit 18: Rendering (Printing, Speaker, …) Major Device Class CoD Bits 8,9,10: Wearable Minor Device Class CoD Bits 2: Wrist Watch",Wrist WatchScosche myTREK – Wireless Pulse Monitor Unknown,"Yes00:1D:DF – Sunitec Enterprise Co., Ltd. 00:06:66 – Roving Networks"

@@ -1,0 +1,5 @@
+,0,1,2,3,4
+0,CoD Hex,CoD Binary,CoD Bits,Bluetooth Device Example,Confirmed
+1,0x020300,000000100000001100000000,"17 | 9,8 | noneMajor Service Class CoD Bit 17: Networking (LAN, Ad hoc, …) Major Device Class CoD Bits 8,9: LAN /Network Access point Minor Device Class CoD Bits 7,6,5 Not Set: Fully available CoD Bits 4,3,2 Not Set: Uncategorized","Fully availableJCMED4 (Possible Jefferson County, KY Ambulance)",Yes00:21:3E – Tomtom
+2,0x120300,000100100000001100000000,"20,17 | 9,8 | noneMajor Service Class CoD Bit 20: Object Transfer (v-Inbox, v-Folder, …) CoD Bit 17: Networking (LAN, Ad hoc, …) Major Device Class CoD Bits 8,9: LAN /Network Access point Minor Device Class none",noneUnknown,"Yes00:01:95 – Sena Technologies, Inc."
+3,0x41031c,010000010000001100011100,"22,16 | 9,8 | 4,3,2Major Service Class CoD Bit 22: Telephony (Cordless telephony, Modem, Headset service, …) CoD Bit 16: Positioning (Location identification) Major Device Class CoD Bits 9,8: LAN /Network Access point Minor Device Class CoD Bits 7,6,5 Not Set: Fully available CoD Bits 4,3,2: All other values reserved",Fully availableNonin 4100 Pulse Oximeter,"Yes00:A0:96 – MITUMI ELECTRIC CO., LTD."
