@@ -1,6 +1,6 @@
 # W-FiNE-tool-BLE-Packet-Analyer
 
-objective: Developed a tool using tkinter which extract the 
+objective: Develop a tool using tkinter which extract the 
 details of the BLE/Bluetooth based IoT node
 
 This code extract all the details of IoT node which suports only 
